@@ -131,6 +131,9 @@ body {
     .second__section .second__section__image img {
         width: 300px;
     }
+    .second__section__button {
+        display: flex;
+    }
     .second__section__button button {
         border: none;
         background-color: var(--violet);
@@ -147,6 +150,9 @@ body {
         align-items: center;
         gap: 1em;
         font-size: 16px;
+    }
+    .second__section__button__desktop {
+        display: none;
     }
 
     /* ! third section */
@@ -213,6 +219,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 30px 0px;
     }
     .fourth__section h3 {
         font-size: 24px;
@@ -220,9 +227,6 @@ body {
         margin-top: 40px;
         margin-bottom: 10px;
         color: var(--dark_grey);
-    }
-    .fourth__section_elements {
-        margin: 30px 0px;
     }
     .fourth__section_elements {
         min-width: 350px;
@@ -333,5 +337,88 @@ body {
     }
     .nav__bar {
         padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .first__section {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        margin-bottom: 40px;
+    }
+    .second__section {
+        margin-top: 0;
+    }
+    .second__section__image img {
+        min-width: 400px;
+    }
+    .first__section__text {
+        text-align: start;
+    }
+    .first__section__text h1{
+        font-size: 60px;
+        padding-right: 40px;
+        width: 350px;
+    }
+    .first__section__text p {
+        width: 500px;
+        font-size: 24px;
+    }
+    .first__section_subtext {
+        justify-content: flex-start;
+    }
+    .container__icons {
+        justify-content: flex-start;
+    }
+    .second__section__button__desktop {
+        display: flex;
+    }
+    .second__section__button__desktop button {
+        border: none;
+        background-color: var(--violet);
+        width: 300px;
+        padding: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .second__section__button__desktop button a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        font-size: 16px;
+    }
+    .second__section__button {
+        display: none;
+    }
+    .container__icons {
+        margin-top: 20px;
+    }
+    .third__section__container {
+        display: flex;
+        justify-content: center;
+    }
+    .third__section__principal__text {
+        max-width: 50%;
+    }
+    .third__section__elements {
+        min-width: 30%;
+        margin-left: 120px;
+    }
+    .third__section__principal__text h3 {
+        width: 350px;
+        padding-left: 10px;
+    }
+    .third__section__principal__text p {
+        width: 400px;
+        padding-left: 10px;
+    }
+    .third__section__icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
     }
 }
